@@ -24,7 +24,6 @@ public class GuardarObjetos {
 	listado.add(p3);
 	listado.add(p4);
 	listado.add(p5);
-	System.out.println(listado);
 	//Vamos a guardar esa lista en un fichero
 	//Primero creamos el objeto
 	try (ObjectOutputStream out1=new ObjectOutputStream(new FileOutputStream(
@@ -33,6 +32,7 @@ public class GuardarObjetos {
 	} catch (IOException e) {
 		e.printStackTrace();
 	}
+	System.out.println("Termina el programa");
 }
 }
 class Personas implements Serializable{
