@@ -34,8 +34,9 @@ public class Ejercicio6 {
 			out1.write(parte1);
 			out1.flush();
 			//El resto al segundo array
-			in.read(parte2, parte1.length, parte2.length);
-			
+			in.read(parte2);
+			out2.write(parte2);
+			out2.flush(); //Forzamos volcado del flujo
 			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
